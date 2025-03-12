@@ -13,48 +13,30 @@
         <p>AI/ML Engineer | Data Enthusiast | Open to Opportunities</p>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a postgraduate AI/ML engineer passionate about data-driven decisions and building AI solutions. I specialize in Machine Learning, Deep Learning, MLOps, Computer Vision, and NLP.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Tech Stack & Skills</h2>
-        <ul>
-            <li>Python, R, PyTorch, TensorFlow</li>
-            <li>FastAPI, Flask, Streamlit</li>
-            <li>OpenCV, NLTK, Computer Vision</li>
-            <li>Docker, AWS, Kubernetes</li>
-            <li>Power BI, Tableau, MySQL</li>
-        </ul>
-    </section>
-
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Live Object Detection using YOLOv5</h3>
-            <p>A Flask-based web app using YOLOv5 for real-time object detection. Features Dockerized deployment and cross-platform compatibility.</p>
-        </div>
-        <div class="project">
-            <h3>Stock Price Prediction App</h3>
-            <p>Uses Transformer models to forecast stock prices. Features PyTorch model training, data processing, and a Streamlit-based UI.</p>
-        </div>
-        <div class="project">
-            <h3>LLM-powered Personalized Finance Advisor</h3>
-            <p>An AI-driven financial advisory system using fine-tuned LLMs, RLHF, and RAG for ethical investment recommendations.</p>
+        <div id="project-list">
+            <!-- Projects will load dynamically from Firebase -->
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:sruthy.sn91@gmail.com">sruthy.sn91@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/sruthy-sreerag-nath" target="_blank">Sruthy Sreerag Nath</a></p>
-        <p>GitHub: <a href="https://github.com/sruthy-sn91" target="_blank">sruthy-sn91</a></p>
+    <section id="admin-panel">
+        <h2>Admin Panel</h2>
+        <button id="login-btn">Login as Admin</button>
+        <div id="admin-controls" style="display:none;">
+            <input type="text" id="project-title" placeholder="Project Title">
+            <input type="text" id="project-desc" placeholder="Project Description">
+            <input type="text" id="github-link" placeholder="GitHub Repo URL">
+            <button id="add-project">Add Project</button>
+        </div>
     </section>
 
     <footer>
         <p>© 2025 Sruthy Sreerag Nath | Built with ❤️</p>
     </footer>
 
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
